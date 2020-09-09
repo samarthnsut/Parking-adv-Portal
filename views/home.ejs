@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        Adv Form
+    </title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Tech Swarm</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+          
+       
+          </ul>
+          <div>
+            <a href="/home/add-adv">Add Adv</a>
+          </div>
+         <div>
+            <a href="#">Sign Out</a>
+         </div>
+      
+        </div>
+      </nav>
+    <% for(a of adv) {%>
+        <% var v="image"%>
+        <% var v1="video"%>
+        <% if(a.advtype==v){%>
+        <img src="<%= a.advfile%>" alt="Product image not available">
+        <%}%>
+        <% if(a.advtype==v1) {%>
+            <video width="320" height="240" controls>
+                <source src="<%= a.advfile%>" type="video/mp4">
+            </video>
+            <%}%>
+    <%}%>
+</body>
