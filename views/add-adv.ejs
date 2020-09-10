@@ -37,10 +37,10 @@
                 </a>
             </div>
           </nav>
-          <div>
+          <div  class="form-group col-xl-6">
             <form action="../uploads" enctype="multipart/form-data" method="POST">
               <div class="form-group" id="file">
-                <label >Upload Image</label>
+                <label >Upload Advertisement</label>
                 <input type="file" name="avatar" class="form-control-file" id="exampleFormControlFile1">
               </div>
               <div class="form-group col-xl-6">
@@ -55,27 +55,43 @@
               <div class="form-group col-xl-6">
                 <label for="exampleFormControlSelect1">Targeted Gender</label>
                 <select class="form-control" name="gender">
-                  <option>Male</option>
-                  <option>Female</option>
-                  <option>Others</option>
-                  <option selected>All</option>
+                  <option>1 M </option>
+                  <option>1 F  </option>
+		  <option>M > 1</option>
+		  <option>F > 1</option>
+                  <option>Couple</option>
+		  <option>Both, F>M</option>
+		  <option>Both, M>F</option>
+                  <option selected>Both</option>
 
                 </select>
               </div>
-                <div class="form-group col-xl-6 ">
-                  <label>Max Targated Age</label>
-                  <input type="text" name="maxage" class="form-control" id="exampleFormControlInput1" placeholder="enter product price">
+
+                <div class="form-group col-xl-6">
+                  <label for="exampleFormControlSelect1">Vehicle Class</label>
+                  <select class="form-control" name="gender">
+                  <option>Micro </option>
+                  <option selected>Class A</option>
+		  <option>Class B</option>
+		  <option>Class C</option>
+                  <option>Class D</option>
+		  <option>Class E</option>
+		  <option>Class F</option>
+
+                </select>
                 </div>
 
                 <div class="form-group col-xl-6 ">
-                  <label>Min Targated Age</label>
-                  <input type="text" name="minage" class="form-control" id="exampleFormControlInput1" placeholder="enter product price">
+                  <label>Maximum Targeted Age</label>
+                  <input type="text" name="maxage" class="form-control" id="exampleFormControlInput1" placeholder="Enter maximum customer age">
+                </div>
+
+                <div class="form-group col-xl-6 ">
+                  <label>Minimum Targeted Age</label>
+                  <input type="text" name="minage" class="form-control" id="exampleFormControlInput1" placeholder="Enter minimum customer age">
                 </div>
                
-                <div class="form-group col-xl-6">
-                  <label >Cars</label>
-                  <textarea name="cars" class="form-control" placeholder="enter names of car with 1 blank space " rows="3"></textarea>
-                </div>
+	<br>
 
 
 
